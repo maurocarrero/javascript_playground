@@ -1,0 +1,22 @@
+{
+  "name": "javascript_playground",
+  "version": "1.0.0",
+  "description": "A place for testing all related to javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "keywords": [
+    "javascript",
+    "patterns"
+  ],
+  "author": "Mauro Carrero <maurocarrero@lataperainvisible.com.uy> (http://www.lataperainvisible.com.uy/)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "3.4.0",
+    "mocha": "2.3.3"
+  }
+}
