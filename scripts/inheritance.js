@@ -1,9 +1,14 @@
-require('./sugar');
-
 /*-----------------------------*/
 /*
  * Animal constructor
  * Base "class"
+ *
+ * __proto__ is a reference to the prototype of the function from which this object inherits.
+ * Animal.constructor is Function
+ * Animal.__proto__ is the prototype of the constructor function, the Function.prototype object.
+ * Animal.__proto__ is different from Animal.prototype.
+ * A constructor function should have Function.prototype as its __proto__.
+ *
  **/
 function Animal(spec) {
 	this.specie = spec.specie;
@@ -18,7 +23,21 @@ Animal.prototype.getFamily = function () {
 };
 
 /*-----------------------------*/
-
+/*
+ * Dog constructor
+ * Child "class"
+ *
+ * Not classical:
+ * 		Dog.constructor: Function object (but should be Animal)
+ *		Dog.__proto__ : Function prototype
+ *		Dog.prototype: Animal.prototype
+ *
+ * Dog.prototype inherits from Animal.prototype because we assigned
+ * an object that inherits from Animal.prototype as its prototype
+ *
+ *
+ *
+ **/
 function Dog(spec) {
 	Animal.call(this, spec);
 	this.name = spec.name;

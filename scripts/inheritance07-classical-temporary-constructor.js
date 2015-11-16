@@ -2,8 +2,8 @@
  * Using a temporary constructor
  *
  * An empty function is used as proxy between Parent and Child.
- * It breaks the direct link between its prototypea and avoids
- * to inherits properties from the constructor.
+ * It breaks the direct link between its prototype and avoids
+ * to inherit properties from the constructor.
  *
  */
 

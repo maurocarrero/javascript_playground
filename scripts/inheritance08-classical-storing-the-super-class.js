@@ -4,8 +4,6 @@
  *
  * 1. Using a Proxy constructor
  * 2. Storing the SuperClass
- * 3. Resetting the constructor pointer, otherwise all Child instances
- * will have Parent as constructor.
  */
 
 function inherits(Derived, Base) {
@@ -17,9 +15,6 @@ function inherits(Derived, Base) {
 
 	// Saving the Uber (Base) function
 	Derived.uber = Base.prototype;
-
-	// Resetting the constructor pointer
-	Derived.prototype.constructor = Derived;
 
 }
 
@@ -35,9 +30,7 @@ Parent.prototype.getName = function () {
 
 /*-----------------------------------------------------------*/
 
-function Child() {
-	Parent.apply(this, arguments);
-}
+function Child() {}
 
 inherits(Child, Parent);
 

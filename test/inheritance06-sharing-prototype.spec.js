@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
-var Parent = require('../scripts/inheritance06').Parent;
-var Child = require('../scripts/inheritance06').Child;
+var Parent = require('../scripts/inheritance06-sharing-prototype').Parent;
+var Child = require('../scripts/inheritance06-sharing-prototype').Child;
 
 describe('inheritance 06 - Sharing the prototype', function () {
 

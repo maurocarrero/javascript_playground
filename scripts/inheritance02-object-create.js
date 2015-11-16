@@ -1,6 +1,7 @@
 /*
- * Animal constructor
- * Base "class"
+ * Inheritance from other object
+ * No "class".
+ * Object.create - NO constructors
  **/
 
 var animal = {};

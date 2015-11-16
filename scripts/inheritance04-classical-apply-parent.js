@@ -67,4 +67,4 @@ function CatWings() {
 }
 
 
-module.exports = { Parent: Parent, Child: Child, CatWings: CatWings };
+module.exports = { Parent: Parent, Child: Child, CatWings: CatWings, Cat: Cat, Bird: Bird };

@@ -20,8 +20,10 @@ Parent.prototype.getName = function () {
 
 
 function Child() {
+	// Borrow the Parent constructor for building each Child instance
 	Parent.apply(this, arguments);
 }
+// Assigning an instance of the Parent as Child's prototype
 Child.prototype = new Parent();
 
 module.exports = { Parent: Parent, Child: Child };

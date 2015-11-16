@@ -70,11 +70,14 @@ describe('inheritance - Animal and Dog', function () {
 			expect(Dog.prototype.getName).to.be.defined;
 		});
 
-		it('Dog.prototype should be the Animal.prototype object', function () {
+		it('Dog.prototype should be an object created from Animal.prototype', function () {
 			expect(Dog.prototype).to.be.defined;
+			expect(Dog.prototype).to.be.an.instanceof(Animal);
 			expect(Dog.prototype.getSpecie).to.be.defined;
 			expect(Dog.prototype.getFamily).to.be.defined;
 			expect(Dog.prototype.getName).to.be.defined;
+			expect(Dog.prototype).to.not.equal(Animal);
+			expect(Dog.prototype).to.not.equal(Animal.prototype);
 			expect(Dog.prototype).to.not.equal(Object.getPrototypeOf(Dog));
 			expect(Dog.prototype).to.not.equal(Object.getPrototypeOf(Animal));
 		});

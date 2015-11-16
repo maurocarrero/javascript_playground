@@ -1,8 +1,8 @@
 var expect = require('chai').expect;
-var Parent = require('../scripts/inheritance03').Parent;
-var Child = require('../scripts/inheritance03').Child;
+var Parent = require('../scripts/inheritance03-default-classical-pattern').Parent;
+var Child = require('../scripts/inheritance03-default-classical-pattern').Child;
 
-describe('inheritance 03 - Inherit: Parent and Child', function () {
+describe('inheritance 03 - Default Classical pattern --> Inherit: Parent and Child', function () {
 
 	describe('constructors', function () {
 
@@ -37,7 +37,7 @@ describe('inheritance 03 - Inherit: Parent and Child', function () {
 			nacho = new Child();
 		});
 
-		it('nacho should provide his name ("Mauro")', function () {
+		it('It inherits also the properties of the constructor, not only the prototype. The nacho child should provide his name ("Mauro")', function () {
 			expect(typeof nacho.getName).to.equal('function');
 			expect(nacho.getName()).to.equal('Mauro');
 		});
