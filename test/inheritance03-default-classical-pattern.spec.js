@@ -26,7 +26,6 @@ describe('inheritance 03 - Default Classical pattern --> Inherit: Parent and Chi
 			expect(Child.prototype).to.be.an.instanceof(Parent);
 			expect(Child.prototype.__proto__).to.equal(Parent.prototype);
 		});
-
 	});
 
 	describe('the children', function () {
@@ -49,6 +48,12 @@ describe('inheritance 03 - Default Classical pattern --> Inherit: Parent and Chi
 		it('nacho __proto__ should be Child.prototype, so an instance of Parent', function () {
 			expect(nacho.__proto__).to.equal(Child.prototype);
 			expect(nacho.__proto__).to.be.an.instanceof(Parent);
+			expect(nacho.__proto__).to.not.be.an.instanceof(Child);
+		});
+
+		it('nacho should be an instance of Parent and an instance of Child', function () {
+			expect(nacho).to.be.an.instanceof(Parent);
+			expect(nacho).to.be.an.instanceof(Child);
 		});
 
 		it('nacho __proto__ should have the getName method and the name property of the parent', function () {
@@ -61,7 +66,5 @@ describe('inheritance 03 - Default Classical pattern --> Inherit: Parent and Chi
 			nacho.name = 'Ignacio';
 			expect(nacho.getName()).to.equal('Ignacio');
 		});
-
 	});
-
 });

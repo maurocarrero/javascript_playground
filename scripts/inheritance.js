@@ -28,14 +28,12 @@ Animal.prototype.getFamily = function () {
  * Child "class"
  *
  * Not classical:
- * 		Dog.constructor: Function object (but should be Animal)
+ * 		Dog.constructor: Function object
  *		Dog.__proto__ : Function prototype
- *		Dog.prototype: Animal.prototype
+ *		Dog.prototype: object created from Animal.prototype
  *
  * Dog.prototype inherits from Animal.prototype because we assigned
  * an object that inherits from Animal.prototype as its prototype
- *
- *
  *
  **/
 function Dog(spec) {
@@ -45,7 +43,6 @@ function Dog(spec) {
 
 Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.constructor = Dog;
-
 Dog.prototype.getName = function () {
 	return this.name;
 };

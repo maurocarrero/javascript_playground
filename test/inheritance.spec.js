@@ -18,7 +18,6 @@ describe('inheritance - Animal and Dog', function () {
 			expect(Animal.__proto__).to.equal(Function.prototype);
 			expect(Object.getPrototypeOf(Animal)).to.equal(Function.prototype);
 		});
-
 	});
 
 	describe('Animal', function () {
@@ -43,8 +42,8 @@ describe('inheritance - Animal and Dog', function () {
 			expect(Animal.prototype.getFamily).to.be.defined;
 			expect(Animal.prototype.getName).to.not.be.defined;
 			expect(Animal.prototype).to.not.equal(Object.getPrototypeOf(Animal));
+			expect(Animal.prototype).to.be.an.instanceOf(Object);
 		});
-
 	});
 
 	describe('Dog', function () {
@@ -114,8 +113,6 @@ describe('inheritance - Animal and Dog', function () {
 			expect(fifi.getFamily()).to.equal('Unknown');
 			expect(fifi.getName).to.not.be.defined;
 		});
-
-
 	});
 
 	describe('Boby: a dog', function () {
@@ -153,8 +150,5 @@ describe('inheritance - Animal and Dog', function () {
 			expect(boby.getSpecie()).to.equal('Dog');
 			expect(boby.getFamily()).to.equal('Mammal');
 		});
-
-
 	});
-
 });
