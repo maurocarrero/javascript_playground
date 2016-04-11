@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
-var Parent = require('../scripts/inheritance03-default-classical-pattern').Parent;
-var Child = require('../scripts/inheritance03-default-classical-pattern').Child;
+var Parent = require('../../scripts/inheritance/inheritance03-default-classical-pattern').Parent;
+var Child = require('../../scripts/inheritance/inheritance03-default-classical-pattern').Child;
 
 describe('inheritance 03 - Default Classical pattern --> Inherit: Parent and Child', function () {
 

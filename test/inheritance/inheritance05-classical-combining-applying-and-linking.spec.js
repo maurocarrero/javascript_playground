@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
-var Parent = require('../scripts/inheritance05-classical-combining-applying-and-linking').Parent;
-var Child = require('../scripts/inheritance05-classical-combining-applying-and-linking').Child;
+var Parent = require('../../scripts/inheritance/inheritance05-classical-combining-applying-and-linking').Parent;
+var Child = require('../../scripts/inheritance/inheritance05-classical-combining-applying-and-linking').Child;
 
 describe('inheritance 05 - Combining: applying and linking', function () {
 

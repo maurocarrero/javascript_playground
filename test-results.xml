@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.039000000000000014" tests="134" failures="0">
+  <testsuite name="Root Suite" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Binary Numbers" timestamp="2016-04-11T01:48:11" tests="4" failures="0" time="0.003">
+    <testcase name="Root Suite Binary Numbers should count until 10" time="0.002" classname="should count until 10">
+    </testcase>
+    <testcase name="Root Suite Binary Numbers 1111 = 15" time="0.001" classname="1111 = 15">
+    </testcase>
+    <testcase name="Root Suite Binary Numbers 110010 = 50" time="0" classname="110010 = 50">
+    </testcase>
+    <testcase name="Root Suite Binary Numbers 10110 = 22" time="0" classname="10110 = 22">
+    </testcase>
+  </testsuite>
+  <testsuite name="EcmaScript 6 - Arrows and Lexical This" timestamp="2016-04-11T01:48:11" tests="4" failures="0" time="0.01">
+    <testcase name="Root Suite EcmaScript 6 - Arrows and Lexical This Javascript has function scope" time="0.001" classname="Javascript has function scope">
+    </testcase>
+    <testcase name="Root Suite EcmaScript 6 - Arrows and Lexical This Arrow functions should share the same lexical this as their surrounding code." time="0" classname="Arrow functions should share the same lexical this as their surrounding code.">
+    </testcase>
+    <testcase name="Root Suite EcmaScript 6 - Arrows and Lexical This Arrows and Lexical This - Babel" time="0.004" classname="Arrows and Lexical This - Babel">
+    </testcase>
+    <testcase name="Root Suite EcmaScript 6 - Arrows and Lexical This Lexical scope on object methods" time="0.005" classname="Lexical scope on object methods">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance - Animal and Dog" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="__proto__ is a reference to the prototype of the function from which this object inherits" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance - Animal and Dog __proto__ is a reference to the prototype of the function from which this object inherits Animal.__proto__ should be different from Animal.prototype" time="0.001" classname="Animal.__proto__ should be different from Animal.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog __proto__ is a reference to the prototype of the function from which this object inherits Animal.__proto__ is the prototype of the constructor function" time="0" classname="Animal.__proto__ is the prototype of the constructor function">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog __proto__ is a reference to the prototype of the function from which this object inherits A constructor function should have Function.prototype as its __proto__" time="0" classname="A constructor function should have Function.prototype as its __proto__">
+    </testcase>
+  </testsuite>
+  <testsuite name="Animal" timestamp="2016-04-11T01:48:11" tests="4" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance - Animal and Dog Animal should exist the Animal contructor function" time="0" classname="should exist the Animal contructor function">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Animal Animal.constructor should be Function" time="0" classname="Animal.constructor should be Function">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Animal Animal.__proto__ should be the Function.prototype object" time="0.001" classname="Animal.__proto__ should be the Function.prototype object">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Animal Animal.prototype should have all the defined methods" time="0" classname="Animal.prototype should have all the defined methods">
+    </testcase>
+  </testsuite>
+  <testsuite name="Dog" timestamp="2016-04-11T01:48:11" tests="5" failures="0" time="0">
+    <testcase name="Root Suite inheritance - Animal and Dog Dog should exist the Dog constructor function" time="0" classname="should exist the Dog constructor function">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Dog Dog.constructor should be the Function object" time="0" classname="Dog.constructor should be the Function object">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Dog Dog.__proto__ should be the Function.prototype object" time="0" classname="Dog.__proto__ should be the Function.prototype object">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Dog Dog.prototype should inherits from Animal.prototype object" time="0" classname="Dog.prototype should inherits from Animal.prototype object">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Dog Dog.prototype should be an object created from Animal.prototype" time="0" classname="Dog.prototype should be an object created from Animal.prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="fifi: a generic animal" timestamp="2016-04-11T01:48:11" tests="4" failures="0" time="0">
+    <testcase name="Root Suite inheritance - Animal and Dog fifi: a generic animal Fifi should be an instance of Animal" time="0" classname="Fifi should be an instance of Animal">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog fifi: a generic animal Fifi&apos;s constructor should be Animal" time="0" classname="Fifi&apos;s constructor should be Animal">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog fifi: a generic animal Fifi&apos;s __proto__ should be Animal.prototype" time="0" classname="Fifi&apos;s __proto__ should be Animal.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog fifi: a generic animal should be able to use all the methods from Animal prototype" time="0" classname="should be able to use all the methods from Animal prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="Boby: a dog" timestamp="2016-04-11T01:48:11" tests="4" failures="0" time="0">
+    <testcase name="Root Suite inheritance - Animal and Dog Boby: a dog Boby should be an instance of Animal and Dog" time="0" classname="Boby should be an instance of Animal and Dog">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Boby: a dog Boby&apos;s constructor should be Dog and not Animal" time="0" classname="Boby&apos;s constructor should be Dog and not Animal">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Boby: a dog Boby&apos;s __proto__ should be Dog.prototype and not Animal.prototype" time="0" classname="Boby&apos;s __proto__ should be Dog.prototype and not Animal.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance - Animal and Dog Boby: a dog should be able to use all the methods from Animal and Dog prototypes" time="0" classname="should be able to use all the methods from Animal and Dog prototypes">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 02 - Object.create - NO constructors - animal and dog" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="animal and dog" timestamp="2016-04-11T01:48:11" tests="7" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance 02 - Object.create - NO constructors - animal and dog animal and dog dog should have the dog methods" time="0" classname="dog should have the dog methods">
+    </testcase>
+    <testcase name="Root Suite inheritance 02 - Object.create - NO constructors - animal and dog animal and dog dog should have the animal methods" time="0" classname="dog should have the animal methods">
+    </testcase>
+    <testcase name="Root Suite inheritance 02 - Object.create - NO constructors - animal and dog animal and dog both should be instances of Object" time="0.001" classname="both should be instances of Object">
+    </testcase>
+    <testcase name="Root Suite inheritance 02 - Object.create - NO constructors - animal and dog animal and dog should have Object as constructor" time="0" classname="should have Object as constructor">
+    </testcase>
+    <testcase name="Root Suite inheritance 02 - Object.create - NO constructors - animal and dog animal and dog should NOT have prototype defined, they are not functions" time="0" classname="should NOT have prototype defined, they are not functions">
+    </testcase>
+    <testcase name="Root Suite inheritance 02 - Object.create - NO constructors - animal and dog animal and dog animal should have Object.prototype as __proto__ property" time="0" classname="animal should have Object.prototype as __proto__ property">
+    </testcase>
+    <testcase name="Root Suite inheritance 02 - Object.create - NO constructors - animal and dog animal and dog dog should have animal as __proto__ property" time="0" classname="dog should have animal as __proto__ property">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="constructors" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child constructors Parent constructor should be Function" time="0" classname="Parent constructor should be Function">
+    </testcase>
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child constructors Child constructor should be Function" time="0" classname="Child constructor should be Function">
+    </testcase>
+  </testsuite>
+  <testsuite name="prototypes" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0.005">
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child prototypes Parent prototype should be Function.prototype" time="0.004" classname="Parent prototype should be Function.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child prototypes Child prototype should be an instance of Parent" time="0.001" classname="Child prototype should be an instance of Parent">
+    </testcase>
+  </testsuite>
+  <testsuite name="the children" timestamp="2016-04-11T01:48:11" tests="6" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child the children It inherits also the properties of the constructor, not only the prototype. The nacho child should provide his name (&quot;Mauro&quot;)" time="0" classname="It inherits also the properties of the constructor, not only the prototype. The nacho child should provide his name (&quot;Mauro&quot;)">
+    </testcase>
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child the children nacho constructor should be Child but it is Parent, because we did not change the constructor" time="0.001" classname="nacho constructor should be Child but it is Parent, because we did not change the constructor">
+    </testcase>
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child the children nacho __proto__ should be Child.prototype, so an instance of Parent" time="0" classname="nacho __proto__ should be Child.prototype, so an instance of Parent">
+    </testcase>
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child the children nacho should be an instance of Parent and an instance of Child" time="0" classname="nacho should be an instance of Parent and an instance of Child">
+    </testcase>
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child the children nacho __proto__ should have the getName method and the name property of the parent" time="0" classname="nacho __proto__ should have the getName method and the name property of the parent">
+    </testcase>
+    <testcase name="Root Suite inheritance 03 - Default Classical pattern --&gt; Inherit: Parent and Child the children should change the name for nacho: &quot;Ignacio&quot;" time="0" classname="should change the name for nacho: &quot;Ignacio&quot;">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 04 - Applying the Parent constructor to each instance" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Article, Post, Tutorial" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0.002">
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Article, Post, Tutorial article should have tags as own property" time="0.001" classname="article should have tags as own property">
+    </testcase>
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Article, Post, Tutorial post should NOT have tags as own property" time="0" classname="post should NOT have tags as own property">
+    </testcase>
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Article, Post, Tutorial tutorial should have tags as own property" time="0.001" classname="tutorial should have tags as own property">
+    </testcase>
+  </testsuite>
+  <testsuite name="Parent and Child" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Parent and Child should use the given parameter" time="0" classname="should use the given parameter">
+    </testcase>
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Parent and Child Child should not have a prototypal link to Parent" time="0" classname="Child should not have a prototypal link to Parent">
+    </testcase>
+  </testsuite>
+  <testsuite name="Catwings" timestamp="2016-04-11T01:48:11" tests="4" failures="0" time="0">
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Catwings An instance of CatWings should have the properties of Cat and Bird" time="0" classname="An instance of CatWings should have the properties of Cat and Bird">
+    </testcase>
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Catwings catty should be an instanceof CatWings" time="0" classname="catty should be an instanceof CatWings">
+    </testcase>
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Catwings catty should not be an instance of Cat nor Bird" time="0" classname="catty should not be an instance of Cat nor Bird">
+    </testcase>
+    <testcase name="Root Suite inheritance 04 - Applying the Parent constructor to each instance Catwings CatWings should not have any prototypal link to Cat neither Bird" time="0" classname="CatWings should not have any prototypal link to Cat neither Bird">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 05 - Combining: applying and linking" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Parent and Child" timestamp="2016-04-11T01:48:11" tests="4" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance 05 - Combining: applying and linking Parent and Child should use the given parameter" time="0" classname="should use the given parameter">
+    </testcase>
+    <testcase name="Root Suite inheritance 05 - Combining: applying and linking Parent and Child Child should have a link to Parent&apos;s prototype" time="0" classname="Child should have a link to Parent&apos;s prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 05 - Combining: applying and linking Parent and Child Flaw: nacho.constructor should incorrectly be Parent" time="0" classname="Flaw: nacho.constructor should incorrectly be Parent">
+    </testcase>
+    <testcase name="Root Suite inheritance 05 - Combining: applying and linking Parent and Child Flaw: the default value of the parent property, Parent.name should emerge from the prototype if we delete the current nacho.name property" time="0.001" classname="Flaw: the default value of the parent property, Parent.name should emerge from the prototype if we delete the current nacho.name property">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 06 - Sharing the prototype" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Parent and Child" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0">
+    <testcase name="Root Suite inheritance 06 - Sharing the prototype Parent and Child should create two persons, a parent and a child" time="0" classname="should create two persons, a parent and a child">
+    </testcase>
+    <testcase name="Root Suite inheritance 06 - Sharing the prototype Parent and Child should share the same prototype" time="0" classname="should share the same prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 06 - Sharing the prototype Parent and Child should affect the Parent prototype if Child.prototype changes" time="0" classname="should affect the Parent prototype if Child.prototype changes">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 07 - Using a proxy for breaking the link between Parent and Child" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Parent and Child - Temporary constructor" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="prototype" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0">
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child Parent and Child - Temporary constructor prototype Parent prototype should be Function.prototype and have the methods defined" time="0" classname="Parent prototype should be Function.prototype and have the methods defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child Parent and Child - Temporary constructor prototype Child prototype should have the Parent methods defined" time="0" classname="Child prototype should have the Parent methods defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child Parent and Child - Temporary constructor prototype Parent and Child should NOT share the same prototype" time="0" classname="Parent and Child should NOT share the same prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="__proto__" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child Parent and Child - Temporary constructor __proto__ Parent.__proto__ should be Function" time="0" classname="Parent.__proto__ should be Function">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child Parent and Child - Temporary constructor __proto__ Child.__proto__ should be Function" time="0" classname="Child.__proto__ should be Function">
+    </testcase>
+  </testsuite>
+  <testsuite name="constructor" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child Parent and Child - Temporary constructor constructor Parent constructor should be Function" time="0" classname="Parent constructor should be Function">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child Parent and Child - Temporary constructor constructor FLAW: Child constructor should be Parent but is Function" time="0" classname="FLAW: Child constructor should be Parent but is Function">
+    </testcase>
+  </testsuite>
+  <testsuite name="The children" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0">
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children lucas should not have a name property defined" time="0" classname="lucas should not have a name property defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children mauro should have his name defined" time="0" classname="mauro should have his name defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children should only inherit properties from the prototype" time="0" classname="should only inherit properties from the prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="prototype" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children prototype any instance should have an undefined prototype" time="0" classname="any instance should have an undefined prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="__proto__" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children __proto__ mauro.__proto__ should be Parent.prototype" time="0" classname="mauro.__proto__ should be Parent.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children __proto__ lucas.__proto__ should be Child.prototype" time="0" classname="lucas.__proto__ should be Child.prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="constructor" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children constructor mauro constructor should be Parent" time="0" classname="mauro constructor should be Parent">
+    </testcase>
+    <testcase name="Root Suite inheritance 07 - Using a proxy for breaking the link between Parent and Child The children constructor FLAW: lucas constructor should be Child but is still Parent" time="0" classname="FLAW: lucas constructor should be Child but is still Parent">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 08 - Temporary constructor: storing the super class" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Parent and Child" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="[prototype]" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [prototype] Parent prototype should be Function.prototype and have the methods defined" time="0" classname="Parent prototype should be Function.prototype and have the methods defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [prototype] Child prototype should have the Parent methods defined" time="0" classname="Child prototype should have the Parent methods defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [prototype] Parent and Child should NOT share the same prototype" time="0" classname="Parent and Child should NOT share the same prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[__proto__]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [__proto__] Parent.__proto__ should be Function" time="0" classname="Parent.__proto__ should be Function">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [__proto__] Child.__proto__ should be Function" time="0" classname="Child.__proto__ should be Function">
+    </testcase>
+  </testsuite>
+  <testsuite name="[constructor]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [constructor] Parent constructor should be Function" time="0" classname="Parent constructor should be Function">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [constructor] FLAW: Child constructor should be Parent but is Function" time="0" classname="FLAW: Child constructor should be Parent but is Function">
+    </testcase>
+  </testsuite>
+  <testsuite name="[uber object - super class]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [uber object - super class] Child.uber should be Parent.prototype" time="0" classname="Child.uber should be Parent.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class Parent and Child [uber object - super class] Parent.uber should be undefined" time="0" classname="Parent.uber should be undefined">
+    </testcase>
+  </testsuite>
+  <testsuite name="The children" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children lucas should not have a name property defined" time="0" classname="lucas should not have a name property defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children mauro should have his name defined" time="0" classname="mauro should have his name defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children should only inherit properties from the prototype" time="0" classname="should only inherit properties from the prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="prototype" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children prototype any instance should have an undefined prototype" time="0" classname="any instance should have an undefined prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="__proto__" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children __proto__ mauro.__proto__ should be Parent.prototype" time="0" classname="mauro.__proto__ should be Parent.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children __proto__ lucas.__proto__ should be Child.prototype" time="0" classname="lucas.__proto__ should be Child.prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="constructor" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children constructor mauro constructor should be Parent" time="0.001" classname="mauro constructor should be Parent">
+    </testcase>
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children constructor FLAW: lucas constructor should be Child but is still Parent" time="0" classname="FLAW: lucas constructor should be Child but is still Parent">
+    </testcase>
+  </testsuite>
+  <testsuite name="uber object - super class" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite inheritance 08 - Temporary constructor: storing the super class The children uber object - super class any children .uber should be undefined" time="0" classname="any children .uber should be undefined">
+    </testcase>
+  </testsuite>
+  <testsuite name="inheritance 09 - Temporary constructor: resetting the constructor pointer" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Parent and Child" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="[prototype]" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [prototype] Parent prototype should be Function.prototype and have the methods defined" time="0" classname="Parent prototype should be Function.prototype and have the methods defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [prototype] Child prototype should have the Parent methods defined" time="0" classname="Child prototype should have the Parent methods defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [prototype] Parent and Child should NOT share the same prototype" time="0" classname="Parent and Child should NOT share the same prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[__proto__]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [__proto__] Parent.__proto__ should be Function.prototype" time="0" classname="Parent.__proto__ should be Function.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [__proto__] Child.__proto__ should be Function.prototype" time="0.001" classname="Child.__proto__ should be Function.prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[constructor]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [constructor] Parent constructor should be Function" time="0" classname="Parent constructor should be Function">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [constructor] Child constructor should be Parent but is Function" time="0" classname="Child constructor should be Parent but is Function">
+    </testcase>
+  </testsuite>
+  <testsuite name="[uber object - super class]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [uber object - super class] Child.uber should be Parent.prototype" time="0" classname="Child.uber should be Parent.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer Parent and Child [uber object - super class] Parent.uber should be undefined" time="0" classname="Parent.uber should be undefined">
+    </testcase>
+  </testsuite>
+  <testsuite name="The children" timestamp="2016-04-11T01:48:11" tests="3" failures="0" time="0.001">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children lucas should not have a name property defined" time="0" classname="lucas should not have a name property defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children mauro should have his name defined" time="0.001" classname="mauro should have his name defined">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children should only inherit properties from the prototype" time="0" classname="should only inherit properties from the prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[prototype]" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children [prototype] any instance should have an undefined prototype" time="0" classname="any instance should have an undefined prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[__proto__]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children [__proto__] mauro.__proto__ should be Parent.prototype" time="0" classname="mauro.__proto__ should be Parent.prototype">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children [__proto__] lucas.__proto__ should be Child.prototype" time="0" classname="lucas.__proto__ should be Child.prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[constructor]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children [constructor] mauro constructor should be Parent" time="0" classname="mauro constructor should be Parent">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children [constructor] [fixed] lucas constructor should be Child" time="0" classname="[fixed] lucas constructor should be Child">
+    </testcase>
+  </testsuite>
+  <testsuite name="[uber object - super class]" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0">
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children [uber object - super class] any children .uber should be undefined" time="0" classname="any children .uber should be undefined">
+    </testcase>
+    <testcase name="Root Suite inheritance 09 - Temporary constructor: resetting the constructor pointer The children [uber object - super class] the instance should reflect the uber access" time="0" classname="the instance should reflect the uber access">
+    </testcase>
+  </testsuite>
+  <testsuite name="klass: a class constructor" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="The new Man class" timestamp="2016-04-11T01:48:11" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="[prototype]" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite klass: a class constructor The new Man class [prototype] Man prototype should have the getName method" time="0" classname="Man prototype should have the getName method">
+    </testcase>
+  </testsuite>
+  <testsuite name="[__proto__]" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite klass: a class constructor The new Man class [__proto__] Man.__proto__ should be Function.prototype" time="0" classname="Man.__proto__ should be Function.prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[constructor]" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite klass: a class constructor The new Man class [constructor] Man constructor should be Function" time="0" classname="Man constructor should be Function">
+    </testcase>
+  </testsuite>
+  <testsuite name="[uber object - super class]" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite klass: a class constructor The new Man class [uber object - super class] Man uber method should be null" time="0" classname="Man uber method should be null">
+    </testcase>
+  </testsuite>
+  <testsuite name="An instance of Man and SuperMan" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0.001">
+    <testcase name="Root Suite klass: a class constructor An instance of Man and SuperMan should have the name set" time="0" classname="should have the name set">
+    </testcase>
+    <testcase name="Root Suite klass: a class constructor An instance of Man and SuperMan clark should be an instance of Man and SuperMan" time="0.001" classname="clark should be an instance of Man and SuperMan">
+    </testcase>
+  </testsuite>
+  <testsuite name="Prototypal inheritance classless pattern" timestamp="2016-04-11T01:48:11" tests="5" failures="0" time="0.002">
+    <testcase name="Root Suite Prototypal inheritance classless pattern parent and child should be objects" time="0.001" classname="parent and child should be objects">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern child should have the same properties and methods than his father" time="0" classname="child should have the same properties and methods than his father">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern daddy, kid and kid2 should be objects" time="0" classname="daddy, kid and kid2 should be objects">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern kid should inherit both own properties and constructor&apos;s prototype" time="0" classname="kid should inherit both own properties and constructor&apos;s prototype">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern kid2 should inherit only from the Parent prototype" time="0.001" classname="kid2 should inherit only from the Parent prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[prototype]" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Prototypal inheritance classless pattern [prototype] objects should not have prototype" time="0" classname="objects should not have prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[__proto__]" timestamp="2016-04-11T01:48:11" tests="5" failures="0" time="0">
+    <testcase name="Root Suite Prototypal inheritance classless pattern [__proto__] parent.__proto__ should be Object.prototype" time="0" classname="parent.__proto__ should be Object.prototype">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern [__proto__] child.__proto__ should be parent" time="0" classname="child.__proto__ should be parent">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern [__proto__] daddy.__proto__ should be Parent.prototype" time="0" classname="daddy.__proto__ should be Parent.prototype">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern [__proto__] kid.__proto__ should be daddy" time="0" classname="kid.__proto__ should be daddy">
+    </testcase>
+    <testcase name="Root Suite Prototypal inheritance classless pattern [__proto__] kid2.__proto__ should be Parent.prototype" time="0" classname="kid2.__proto__ should be Parent.prototype">
+    </testcase>
+  </testsuite>
+  <testsuite name="[constructor]" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0.001">
+    <testcase name="Root Suite Prototypal inheritance classless pattern [constructor] objects should have Object as constructor" time="0.001" classname="objects should have Object as constructor">
+    </testcase>
+  </testsuite>
+  <testsuite name="ECMAScript 5 Object.create" timestamp="2016-04-11T01:48:11" tests="1" failures="0" time="0.001">
+    <testcase name="Root Suite Prototypal inheritance classless pattern ECMAScript 5 Object.create should inherit and also add the new properties" time="0.001" classname="should inherit and also add the new properties">
+    </testcase>
+  </testsuite>
+  <testsuite name="Chai-spies" timestamp="2016-04-11T01:48:11" tests="2" failures="0" time="0.006">
+    <testcase name="Root Suite Chai-spies should spy on an object&apos;s method" time="0.004" classname="should spy on an object&apos;s method">
+    </testcase>
+    <testcase name="Root Suite Chai-spies should spy on a function" time="0.002" classname="should spy on a function">
+    </testcase>
+  </testsuite>
+</testsuites>

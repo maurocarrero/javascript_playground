@@ -1,12 +1,12 @@
 var expect = require('chai').expect;
-var Parent = require('../scripts/inheritance08-classical-storing-the-super-class').Parent;
-var Child = require('../scripts/inheritance08-classical-storing-the-super-class').Child;
+var Parent = require('../../scripts/inheritance/inheritance07-classical-temporary-constructor').Parent;
+var Child = require('../../scripts/inheritance/inheritance07-classical-temporary-constructor').Child;
 
-describe('inheritance 08 - Temporary constructor: storing the super class', function () {
+describe('inheritance 07 - Using a proxy for breaking the link between Parent and Child', function () {
 
-	describe('Parent and Child', function () {
+	describe('Parent and Child - Temporary constructor', function () {
 
-		describe('[prototype]', function () {
+		describe('prototype', function () {
 			it('Parent prototype should be Function.prototype and have the methods defined', function () {
 				expect(Child.prototype).to.not.equal(Function.prototype);
 				expect(Parent.prototype).to.be.an.object;
@@ -25,33 +25,24 @@ describe('inheritance 08 - Temporary constructor: storing the super class', func
 		});
 
 
-		describe('[__proto__]', function () {
+		describe('__proto__', function () {
 			it('Parent.__proto__ should be Function', function () {
 				expect(Parent.__proto__).to.equal(Function.prototype);
 			});
 
 			it('Child.__proto__ should be Function', function () {
 				expect(Child.__proto__).to.equal(Function.prototype);
+				expect(Child.__proto__).to.equal(Function.prototype);
 			});
 		});
 
-		describe('[constructor]', function () {
+		describe('constructor', function () {
 			it('Parent constructor should be Function', function () {
 				expect(Parent.constructor).to.equal(Function);
 			});
 
 			it('FLAW: Child constructor should be Parent but is Function', function () {
 				expect(Child.constructor).to.equal(Function);
-			});
-		});
-
-		describe('[uber object - super class]', function () {
-			it('Child.uber should be Parent.prototype', function () {
-				expect(Child.uber).to.equal(Parent.prototype);
-			});
-
-			it('Parent.uber should be undefined', function () {
-				expect(Parent.uber).to.be.undefined;
 			});
 		});
 
@@ -103,13 +94,6 @@ describe('inheritance 08 - Temporary constructor: storing the super class', func
 			});
 			it('FLAW: lucas constructor should be Child but is still Parent', function () {
 				expect(lucas.constructor).to.equal(Parent);
-			});
-		});
-
-		describe('uber object - super class', function () {
-			it('any children .uber should be undefined', function () {
-				expect(mauro.uber).to.be.undefined;
-				expect(lucas.uber).to.be.undefined;
 			});
 		});
 

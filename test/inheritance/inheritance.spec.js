@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
-var Animal = require('../scripts/inheritance').Animal;
-var Dog = require('../scripts/inheritance').Dog;
+var Animal = require('../../scripts/inheritance/inheritance').Animal;
+var Dog = require('../../scripts/inheritance/inheritance').Dog;
 
 describe('inheritance - Animal and Dog', function () {
 

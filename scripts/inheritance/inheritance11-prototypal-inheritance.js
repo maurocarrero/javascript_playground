@@ -18,7 +18,7 @@ function object(obj) {
 
 // object to inherit from
 var parent = {
-	name: 'Pap·'
+	name: 'Pap√°'
 };
 
 // the new object

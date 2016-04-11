@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R mocha-junit-reporter --recursive --compilers js:babel-register"
   },
   "keywords": [
     "javascript",
@@ -16,7 +16,10 @@
   "author": "Mauro Carrero <maurocarrero@lataperainvisible.com.uy> (http://www.lataperainvisible.com.uy/)",
   "license": "MIT",
   "devDependencies": {
+    "babel-register": "6.7.2",
     "chai": "3.4.0",
-    "mocha": "2.3.3"
+    "chai-spies": "0.7.1",
+    "mocha": "2.3.3",
+    "mocha-junit-reporter": "1.10.0"
   }
 }

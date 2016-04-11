@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var object = require('../scripts/inheritance11-prototypal-inheritance').object;
+var object = require('../../scripts/inheritance/inheritance11-prototypal-inheritance').object;
 
 describe('Prototypal inheritance classless pattern', function () {
 
@@ -9,7 +9,7 @@ describe('Prototypal inheritance classless pattern', function () {
 	before(function () {
 		// object to inherit from
 		parent = {
-			name: 'Pap·',
+			name: 'Pap√°',
 			getName: function () {
 				return this.name;
 			}
@@ -42,8 +42,8 @@ describe('Prototypal inheritance classless pattern', function () {
 	});
 
 	it('child should have the same properties and methods than his father', function () {
-		expect(child.name).to.equal('Pap·');
-		expect(child.getName()).to.equal('Pap·');
+		expect(child.name).to.equal('Pap√°');
+		expect(child.getName()).to.equal('Pap√°');
 	});
 
 	it('daddy, kid and kid2 should be objects', function () {

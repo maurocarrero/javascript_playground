@@ -1,8 +1,8 @@
 var expect = require('chai').expect;
-var Parent = require('../scripts/inheritance09-classical-resetting-the-constructor-pointer').Parent;
-var Child = require('../scripts/inheritance09-classical-resetting-the-constructor-pointer').Child;
+var Parent = require('../../scripts/inheritance/inheritance08-classical-storing-the-super-class').Parent;
+var Child = require('../../scripts/inheritance/inheritance08-classical-storing-the-super-class').Child;
 
-describe('inheritance 09 - Temporary constructor: resetting the constructor pointer', function () {
+describe('inheritance 08 - Temporary constructor: storing the super class', function () {
 
 	describe('Parent and Child', function () {
 
@@ -26,11 +26,11 @@ describe('inheritance 09 - Temporary constructor: resetting the constructor poin
 
 
 		describe('[__proto__]', function () {
-			it('Parent.__proto__ should be Function.prototype', function () {
+			it('Parent.__proto__ should be Function', function () {
 				expect(Parent.__proto__).to.equal(Function.prototype);
 			});
 
-			it('Child.__proto__ should be Function.prototype', function () {
+			it('Child.__proto__ should be Function', function () {
 				expect(Child.__proto__).to.equal(Function.prototype);
 			});
 		});
@@ -40,7 +40,7 @@ describe('inheritance 09 - Temporary constructor: resetting the constructor poin
 				expect(Parent.constructor).to.equal(Function);
 			});
 
-			it('Child constructor should be Parent but is Function', function () {
+			it('FLAW: Child constructor should be Parent but is Function', function () {
 				expect(Child.constructor).to.equal(Function);
 			});
 		});
@@ -67,7 +67,7 @@ describe('inheritance 09 - Temporary constructor: resetting the constructor poin
 		});
 
 		it('lucas should not have a name property defined', function () {
-			expect(lucas.getName()).to.equal('Lucas');
+			expect(lucas.getName()).to.be.undefined;
 		});
 
 		it('mauro should have his name defined', function () {
@@ -75,19 +75,20 @@ describe('inheritance 09 - Temporary constructor: resetting the constructor poin
 		});
 
 		it('should only inherit properties from the prototype', function () {
+			lucas.name = 'Lucas';
 			expect(lucas.getName()).to.equal('Lucas');
 			delete lucas.name;
 			expect(lucas.getName()).to.equal(undefined);
 		});
 
-		describe('[prototype]', function () {
+		describe('prototype', function () {
 			it('any instance should have an undefined prototype', function () {
 				expect(mauro.prototype).to.be.undefined;
 				expect(lucas.prototype).to.be.undefined;
 			});
 		});
 
-		describe('[__proto__]', function () {
+		describe('__proto__', function () {
 			it('mauro.__proto__ should be Parent.prototype', function () {
 				expect(mauro.__proto__).to.equal(Parent.prototype);
 			});
@@ -96,23 +97,19 @@ describe('inheritance 09 - Temporary constructor: resetting the constructor poin
 			});
 		});
 
-		describe('[constructor]', function () {
+		describe('constructor', function () {
 			it('mauro constructor should be Parent', function () {
 				expect(mauro.constructor).to.equal(Parent);
 			});
-			it('[fixed] lucas constructor should be Child', function () {
-				expect(lucas.constructor).to.equal(Child);
+			it('FLAW: lucas constructor should be Child but is still Parent', function () {
+				expect(lucas.constructor).to.equal(Parent);
 			});
 		});
 
-		describe('[uber object - super class]', function () {
+		describe('uber object - super class', function () {
 			it('any children .uber should be undefined', function () {
 				expect(mauro.uber).to.be.undefined;
 				expect(lucas.uber).to.be.undefined;
-			});
-
-			it('the instance should reflect the uber access', function () {
-				expect(lucas.getBaseName()).to.equal('I am the Parent function prototype, who method');
 			});
 		});
 

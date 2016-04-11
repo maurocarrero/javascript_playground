@@ -1,9 +1,9 @@
 var expect = require('chai').expect;
-var Parent = require('../scripts/inheritance04-classical-apply-parent').Parent;
-var Child = require('../scripts/inheritance04-classical-apply-parent').Child;
-var Cat = require('../scripts/inheritance04-classical-apply-parent').Cat;
-var Bird = require('../scripts/inheritance04-classical-apply-parent').Bird;
-var CatWings = require('../scripts/inheritance04-classical-apply-parent').CatWings;
+var Parent = require('../../scripts/inheritance/inheritance04-classical-apply-parent').Parent;
+var Child = require('../../scripts/inheritance/inheritance04-classical-apply-parent').Child;
+var Cat = require('../../scripts/inheritance/inheritance04-classical-apply-parent').Cat;
+var Bird = require('../../scripts/inheritance/inheritance04-classical-apply-parent').Bird;
+var CatWings = require('../../scripts/inheritance/inheritance04-classical-apply-parent').CatWings;
 
 describe('inheritance 04 - Applying the Parent constructor to each instance', function () {
 

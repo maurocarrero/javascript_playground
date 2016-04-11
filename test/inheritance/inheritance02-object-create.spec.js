@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
-var animal = require('../scripts/inheritance02-object-create').animal;
-var dog = require('../scripts/inheritance02-object-create').dog;
+var animal = require('../../scripts/inheritance/inheritance02-object-create').animal;
+var dog = require('../../scripts/inheritance/inheritance02-object-create').dog;
 
 describe('inheritance 02 - Object.create - NO constructors - animal and dog', function () {
 

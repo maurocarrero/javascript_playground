@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var klass = require('../scripts/inheritance10-klass').klass;
+var klass = require('../../scripts/inheritance/inheritance10-klass').klass;
 
 describe('klass: a class constructor', function () {
 
