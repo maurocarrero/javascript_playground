@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "A place for testing all related to javascript",
   "main": "index.js",
+  "repository": "https://github.com/maurocarrero/javascript_playground",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R mocha-junit-reporter --recursive --compilers js:babel-register"
+    "test": "mocha -R mocha-spec-reporter --recursive --compilers js:babel-register"
   },
   "keywords": [
     "javascript",
