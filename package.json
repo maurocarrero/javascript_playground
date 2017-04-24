@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R mocha-spec-reporter --recursive --compilers js:babel-register"
+    "test": "mocha --recursive --compilers js:babel-register"
   },
   "keywords": [
     "javascript",
